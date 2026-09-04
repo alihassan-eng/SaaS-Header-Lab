@@ -1,0 +1,17 @@
+/* ==========================================================================
+   GLOBAL HARDWARE LAYOUT RESET (CORE CSSOM LAYER)
+   ========================================================================== */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Enforces strict mathematical box boundaries */
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
