@@ -1,17 +1,26 @@
 /* ==========================================================================
-   GLOBAL HARDWARE LAYOUT RESET (CORE CSSOM LAYER)
+   GLOBAL DESIGN TOKENS (Silicon Valley Enterprise Core)
    ========================================================================== */
+:root {
+    --bg-dark: #03050a;
+    --bg-card: #0b0e17;
+    --color-primary: #38bdf8;
+    --color-text: #f8fafc;
+    --color-muted: #94a3b8;
+    --font-system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Enforces strict mathematical box boundaries */
+    /* 🧠 MIT Standard Fluid Math: بغیر میڈیا کوئری کے ٹیکسٹ اسکرین کے مطابق بڑا/چھوٹا ہوگا */
+    --fs-hero: clamp(2rem, 4vw + 1rem, 3.5rem);
+    --fs-body: clamp(0.95rem, 0.2vw + 0.9rem, 1.1rem);
 }
 
-html, body {
-    width: 100%;
-    min-height: 100vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+/* ==========================================================================
+   GLOBAL RESET
+   ========================================================================== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
